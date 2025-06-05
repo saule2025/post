@@ -1,22 +1,22 @@
 /* Переменные */
 :root {	
 	/* Основные цвета */
-	--navbar-background-color: Green;
+	--navbar-background-color: MidnightBlue;
 	--navbar-text-color: Gold;
 	--main-background-color-light: Snow;
 	--main-background-color-dark: LightGrey;
-	--main-text-color: Green;
-	--main-header-color: DarkGreen;
+	--main-text-color: MidnightBlue;
+	--main-header-color: DarkBlue;
 	--main-text-attention-color: Purple;
-	--footer-background-color-light: PaleGreen;
-	--footer-background-color-dark: SeaGreen;
+	--footer-background-color-light: LightBlue;
+	--footer-background-color-dark: RoyalBlue;
 	--footer-text-color: Teal;
 	--card-background-color-light: Snow;
 	--card-background-color-dark: LightGrey;
-	--card-text-color: SeaGreen;
+	--card-text-color: SkyBlue;
 	--table-background-color-light: Snow; 
 	--table-background-color-dark: LightGrey; 
-	--table-text-color: Green;	
+	--table-text-color: Blue;	
 	/* Звездочки в оценке */
 	--star-size: 30px;
 	--star-color: Yellow;
@@ -513,7 +513,7 @@ header h1, header h2, header h3, header h4, header h5, header h6 {
 	text-align: center; 
 }
 header p {
-    color: DarkGreen;
+    color: DarkBlue;
 	text-align: center; 
 }
 /* main */ 
@@ -547,7 +547,7 @@ main {
 	padding: 10px;
 }
 /* #benefits .col-md-3 {
-	border: 2px solid DarkOliveGreen;
+	border: 2px solid DarkOliveBlue;
 	border-radius: 10px;
 	padding: 10px;	
 } */
