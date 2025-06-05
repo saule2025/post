@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-+^naq2&t^sf$f1d=_$cd*4j5m=43(iwfqkw5ggo5kj&%ky19cb
 DEBUG = False
 #DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'post-tracking.onrender.com',]
+ALLOWED_HOSTS = ['127.0.0.1', 'post-tracking-dinm.onrender.com',]
 
 # Application definition
 
