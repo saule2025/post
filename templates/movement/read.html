@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block title %}{% trans "Read" %}{% endblock title %}
+{% block header %}{% endblock header %}
+{% block content %}
+<h2>{% trans "movement" %}</h2>
+<div class="row justify-content-center">
+	<div class="card" style="width:100%">
+		<div class="card-header">	
+			<h4>{{ movement.package }}</h4>			
+		</div>
+		<div class="card-body">
+			<p>{{ movement.datem | date:"d.m.Y H:i" }}</p>			
+			<p>{{ movement.details }}</p>			
+		</div>
+		<div class="card-footer">
+			<p>{{ movement.status }}</p>					
+		</div>		
+		<br>
+	</div>	
+	<div class="div-button-center">
+		<a class="btn btn-outline-info" style="width:120px" href="{% url 'movement_index' package_id %}">{% trans "Back" %}</a> 	
+	</div>
+</div>
+
+{% endblock content %}

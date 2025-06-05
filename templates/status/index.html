@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block title %}{% trans "statuss" %}{% endblock title %}
+{% block header %}{% endblock header %}
+{% block content %}
+<h2>{% trans "statuss" %}</h2>
+<p><a href="{% url 'status_create' %}">{% trans "Add" %}</a></p>					
+<hr>
+{% if status.count > 0 %}
+<div class="row">
+	<table id="myTable" class="table-manager" style="width:100%">
+		<thead>
+			<tr>
+				<th>{% trans "title" %}</th>
+				<th></th>				
+			</tr>
+		</thead>
+		<tbody>
+			{% for n in status %}
+			<tr>
+				<td>
+					<p>{{ n.title }}</p>	
+				</td>
+				<td>
+					<a href="{% url 'status_edit' n.id %}">{% trans "Change" %}</a> 
+					<a href="{% url 'status_read' n.id %}">{% trans "View" %}</a> 
+					<a onclick="return confirm('Удалить запись?')" href="{% url 'status_delete' n.id %}">{% trans "Delete" %}</a>
+				</td>			
+			</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+</div>
+{% endif %}
+{% endblock content %}
+

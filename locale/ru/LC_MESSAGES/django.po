@@ -1,0 +1,269 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-06-03 15:08+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
+"10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%"
+"100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: .\templates\base.html:44
+msgid "Home"
+msgstr "Главная"
+
+#: .\templates\base.html:46
+msgid "contacts"
+msgstr "Контакты"
+
+#: .\templates\base.html:55 .\templates\country\index.html:3
+#: .\templates\country\index.html:6
+msgid "countrys"
+msgstr "Страны"
+
+#: .\templates\base.html:56 .\templates\status\index.html:3
+#: .\templates\status\index.html:6
+msgid "statuss"
+msgstr "Статусы"
+
+#: .\templates\base.html:57 .\templates\package\index.html:3
+#: .\templates\package\index.html:6
+msgid "packages"
+msgstr "Почтовые отправления"
+
+#: .\templates\base.html:59 .\templates\customer\list.html:3
+#: .\templates\customer\list.html:6
+msgid "customers"
+msgstr "Клиенты"
+
+#: .\templates\base.html:61 .\templates\report.html:7
+msgid "report"
+msgstr "Отчет"
+
+#: .\templates\base.html:66
+msgid "My account"
+msgstr "Моя учетная запись"
+
+#: .\templates\base.html:67
+msgid "Change password"
+msgstr "Изменить пароль"
+
+#: .\templates\base.html:69
+msgid "Log out"
+msgstr "Выйти"
+
+#: .\templates\base.html:74
+msgid "Log In"
+msgstr "Войти"
+
+#: .\templates\base.html:75
+msgid "Sign up"
+msgstr "Зарегистрироваться"
+
+#: .\templates\contact.html:7
+#, fuzzy
+#| msgid "contacts"
+msgid "Contacts"
+msgstr "Контакты"
+
+#: .\templates\country\create.html:3 .\templates\movement\create.html:3
+#: .\templates\package\create.html:3 .\templates\status\create.html:3
+msgid "Create"
+msgstr "Создать"
+
+#: .\templates\country\create.html:6 .\templates\country\edit.html:6
+#: .\templates\country\read.html:6
+msgid "country"
+msgstr "Страна"
+
+#: .\templates\country\create.html:13 .\templates\country\edit.html:13
+#: .\templates\movement\create.html:14 .\templates\movement\edit.html:14
+#: .\templates\package\create.html:13 .\templates\package\edit.html:13
+#: .\templates\status\create.html:13 .\templates\status\edit.html:13
+msgid "Save"
+msgstr "Сохранить"
+
+#: .\templates\country\create.html:14 .\templates\country\edit.html:14
+#: .\templates\country\read.html:18 .\templates\movement\create.html:15
+#: .\templates\movement\edit.html:15 .\templates\movement\index.html:10
+#: .\templates\movement\read.html:20 .\templates\package\create.html:14
+#: .\templates\package\edit.html:14 .\templates\package\read.html:31
+#: .\templates\status\create.html:14 .\templates\status\edit.html:14
+#: .\templates\status\read.html:18
+msgid "Back"
+msgstr "Назад"
+
+#: .\templates\country\edit.html:3 .\templates\country\index.html:24
+#: .\templates\movement\edit.html:3 .\templates\movement\index.html:44
+#: .\templates\package\edit.html:3 .\templates\package\index.html:48
+#: .\templates\status\edit.html:3 .\templates\status\index.html:24
+msgid "Change"
+msgstr "Изменить"
+
+#: .\templates\country\index.html:12 .\templates\status\index.html:12
+msgid "title"
+msgstr "Название"
+
+#: .\templates\country\index.html:14 .\templates\country\index.html:34
+#: .\templates\movement\index.html:21 .\templates\movement\index.html:54
+#: .\templates\package\index.html:18 .\templates\package\index.html:58
+#: .\templates\status\index.html:14 .\templates\status\index.html:34
+msgid "Add"
+msgstr "Добавить"
+
+#: .\templates\country\index.html:25 .\templates\movement\index.html:45
+#: .\templates\package\index.html:49 .\templates\status\index.html:25
+msgid "View"
+msgstr "Просмотреть"
+
+#: .\templates\country\index.html:26 .\templates\movement\index.html:46
+#: .\templates\package\index.html:50 .\templates\status\index.html:26
+msgid "Delete"
+msgstr "Удалить"
+
+#: .\templates\country\read.html:3 .\templates\movement\read.html:3
+#: .\templates\package\read.html:3 .\templates\status\read.html:3
+msgid "Read"
+msgstr "Просмотреть"
+
+#: .\templates\customer\list.html:12 .\tracking\models.py:37
+msgid "telegram_id"
+msgstr "Telegram id"
+
+#: .\templates\customer\list.html:13 .\tracking\models.py:38
+msgid "phone_number"
+msgstr "Номер телефона (Telegram)"
+
+#: .\templates\customer\list.html:14
+msgid "EMail"
+msgstr "E-Mail"
+
+#: .\templates\customer\list.html:15 .\tracking\models.py:40
+msgid "first_name"
+msgstr "Имя (Telegram)"
+
+#: .\templates\customer\list.html:16 .\tracking\models.py:41
+msgid "last_name"
+msgstr "Фамилия (Telegram)"
+
+#: .\templates\index.html:4 .\templates\registration\logged_out.html:4
+#: .\templates\registration\login.html:4
+#: .\templates\registration\password_change_done.html:3
+#: .\templates\registration\password_change_form.html:3
+#: .\templates\registration\password_reset_complete.html:4
+#: .\templates\registration\password_reset_confirm.html:4
+#: .\templates\registration\password_reset_done.html:4
+#: .\templates\registration\password_reset_form.html:4
+#: .\templates\registration\register_done.html:4
+msgid "App Name"
+msgstr "Почтовые отправления"
+
+#: .\templates\movement\create.html:7 .\templates\movement\edit.html:7
+#: .\templates\movement\read.html:6
+msgid "movement"
+msgstr "Перемещение"
+
+#: .\templates\movement\index.html:3 .\templates\movement\index.html:12
+#: .\templates\package\index.html:45
+msgid "movements"
+msgstr "Перемещения"
+
+#: .\templates\movement\index.html:8 .\templates\package\index.html:14
+#: .\templates\package\read.html:14 .\templates\report.html:16
+msgid "sender"
+msgstr "Отправитель"
+
+#: .\templates\movement\index.html:9 .\templates\package\index.html:15
+#: .\templates\package\read.html:18 .\templates\report.html:17
+msgid "recipient"
+msgstr "Получатель"
+
+#: .\templates\movement\index.html:17 .\templates\package\create.html:6
+#: .\templates\package\edit.html:6 .\templates\package\read.html:6
+msgid "package"
+msgstr "Почтовое отправление"
+
+#: .\templates\movement\index.html:18
+msgid "datem"
+msgstr "Дата"
+
+#: .\templates\movement\index.html:19 .\templates\status\create.html:6
+#: .\templates\status\edit.html:6 .\templates\status\read.html:6
+#: .\tracking\forms.py:61
+msgid "status"
+msgstr "Статус"
+
+#: .\templates\package\index.html:12 .\templates\report.html:14
+#: .\tracking\models.py:93 .\tracking\models.py:149
+msgid "track_number"
+msgstr "Трек-номер"
+
+#: .\templates\package\index.html:13 .\templates\report.html:15
+#: .\tracking\models.py:121 .\tracking\models.py:150
+msgid "dates"
+msgstr "Дата"
+
+#: .\templates\package\index.html:16 .\templates\report.html:18
+#: .\tracking\models.py:160
+msgid "final"
+msgstr "Последнее движение"
+
+#: .\tracking\forms.py:47
+msgid "sender_country"
+msgstr "Страна отправитель"
+
+#: .\tracking\forms.py:48
+msgid "recipient_country"
+msgstr "Страна поучатель"
+
+#: .\tracking\models.py:39
+msgid "email"
+msgstr "EMail"
+
+#: .\tracking\models.py:59 .\tracking\models.py:152 .\tracking\models.py:156
+msgid "title_country"
+msgstr "Название страны"
+
+#: .\tracking\models.py:76
+msgid "title_status"
+msgstr "Название статуса"
+
+#: .\tracking\models.py:94
+msgid "datep"
+msgstr "Дата"
+
+#: .\tracking\models.py:96 .\tracking\models.py:153
+msgid "sender_address"
+msgstr "Адрес отправителя"
+
+#: .\tracking\models.py:97 .\tracking\models.py:154
+msgid "sender_name"
+msgstr "Имя отправителя"
+
+#: .\tracking\models.py:99 .\tracking\models.py:157
+msgid "recipient_address"
+msgstr "Адрес получателя"
+
+#: .\tracking\models.py:100 .\tracking\models.py:158
+msgid "recipient_name"
+msgstr "Имя получателя"
+
+#: .\tracking\models.py:101 .\tracking\models.py:159
+msgid "recipient_phone"
+msgstr "Телефон получателя"
+
+#: .\tracking\models.py:123
+msgid "details_movement"
+msgstr "Детали"
+

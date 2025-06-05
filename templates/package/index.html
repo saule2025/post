@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block title %}{% trans "packages" %}{% endblock title %}
+{% block header %}{% endblock header %}
+{% block content %}
+<h2>{% trans "packages" %}</h2>
+<p><a href="{% url 'package_create' %}">{% trans "Add" %}</a></p>					
+<hr>
+{% if package.count > 0 %}
+<div class="row">
+	<table id="myTable" class="table-manager" style="width:100%">
+		<thead>
+			<tr>
+				<th>{% trans "track_number" %}</th>
+				<th>{% trans "dates" %}</th>
+				<th>{% trans "sender" %}</th>
+				<th>{% trans "recipient" %}</th>
+				<th>{% trans "final" %}</th>
+				<th></th>
+			</tr>
+		</thead>
+		<tbody>
+			{% for n in package %}
+			<tr>
+				<td>
+					<p>{{ n.track_number }}</p>						
+				</td>
+				<td>
+					<p>{{ n.dates | date:"d.m.Y H:i"}}</p>	
+				</td>
+				<td>
+					<p>{{ n.sender_country }}</p>						
+					<p>{{ n.sender_address }}</p>						
+					<p>{{ n.sender_name }}</p>						
+				</td>
+				<td>
+					<p>{{ n.recipient_country }}</p>	
+					<p>{{ n.recipient_address }}</p>	
+					<p>{{ n.recipient_name }}</p>	
+					<p>{{ n.recipient_phone }}</p>	
+				</td>
+				<td>
+					{% if n.final != None %}
+					<p>{{ n.final }}</p>
+					{% endif %}
+					<a href="{% url 'movement_index' n.id%}">{% trans "movements" %}</a>					
+				</td>
+				<td>
+					<a href="{% url 'package_edit' n.id %}">{% trans "Change" %}</a> 
+					<a href="{% url 'package_read' n.id %}">{% trans "View" %}</a> 
+					<a onclick="return confirm('Удалить запись?')" href="{% url 'package_delete' n.id %}">{% trans "Delete" %}</a>
+				</td>			
+			</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+</div>
+{% endif %}
+{% endblock content %}
+

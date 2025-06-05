@@ -1,0 +1,58 @@
+{{% extends "base.html" %}
+{% load i18n %}
+{% block title %}{% trans "movements" %}{% endblock title %}
+{% block header %}{% endblock header %}
+{% block content %}
+<h3>{{ pack.track_number }}</h3>
+<h3>{{ pack.dates | date:"d.m.Y H:i"}}</h3>
+<h3>{% trans "sender" %}: {{ pack.sender_country }}, {{ pack.sender_address }}, {{ pack.sender_name }}</h3>
+<h3>{% trans "recipient" %}: {{ pack.recipient_country }}, {{ pack.recipient_address }}, {{ pack.recipient_name }}, {{ pack.recipient_phone }} </h3>
+<p><a href="{% url 'movement_create' package_id %}">{% trans "Add" %}</a></p>					
+<hr>
+{% if movement.count > 0 %}
+<h2>{% trans "movements" %}</h2>
+<div class="row">
+	<table id="myTable" class="table-manager" style="width:100%">
+		<thead>
+			<tr>
+				<th>{% trans "package" %}</th>
+				<th>{% trans "datem" %}</th>
+				<th>{% trans "status" %}</th>
+				<th></th>				
+			</tr>
+		</thead>
+		<tbody>
+			{% for n in movement %}
+			<tr>
+				<td>
+					<p>{{ n.package }}</p>	
+				</td>
+				<td>
+					<p>{{ n.datem | date:"d.m.Y H:i" }}</p>	
+				</td>
+				<td>
+					<p>{{ n.status }}</p>	
+				</td>				
+				<!--
+				<td>
+					{% if n.photo.url != None %}
+					<img style="width:100%; max-width:256px; padding:10px" src="{{ n.photo.url}}" alt="{{ n.title }}">
+					{% endif %}	
+				</td>
+				-->
+				<td>
+					<a href="{% url 'movement_edit' n.id package_id %}">{% trans "Change" %}</a> 
+					<a href="{% url 'movement_read' n.id package_id %}">{% trans "View" %}</a> 
+					<a onclick="return confirm('Удалить запись?')" href="{% url 'movement_delete' n.id package_id %}">{% trans "Delete" %}</a>
+				</td>			
+			</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+</div>
+{% endif %}
+<div class="div-button-center">
+	<button onclick="location.href='{% url 'package_index'%}'" class="btn btn-outline-info" style="width:100px">{% trans "Back" %}</button>	
+</div>
+{% endblock content %}
+

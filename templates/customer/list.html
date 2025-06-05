@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block title %}{% trans "customers" %}{% endblock title %}
+{% block header %}{% endblock header %}
+{% block content %}
+<h2>{% trans "customers" %}</h2>
+{% if customer.count > 0 %}
+<div class="row">
+	<table id="myTable" class="table-manager" style="width:100%">
+		<thead>
+			<tr>
+				<th>{% trans "telegram_id" %}</th>
+				<th>{% trans "phone_number" %}</th>
+				<th>{% trans "EMail" %}</th>
+				<th>{% trans "first_name" %}</th>
+				<th>{% trans "last_name" %}</th>
+			</tr>
+		</thead>
+		<tbody>
+			{% for n in customer %}
+			<tr>
+				<td>
+					<p>{{ n.telegram_id }}</p>	
+				</td>
+				<td>
+					<p>{{ n.phone_number }}</p>	
+				</td>
+				<td>
+					<p>{{ n.email }}</p>	
+				</td>
+				<td>
+					<p>{{ n.first_name }}</p>	
+				</td>
+				<td>
+					<p>{{ n.last_name }}</p>	
+				</td>
+			</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+</div>
+
+{% endif %}
+{% endblock content %}
+

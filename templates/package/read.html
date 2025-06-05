@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block title %}{% trans "Read" %}{% endblock title %}
+{% block header %}{% endblock header %}
+{% block content %}
+<h2>{% trans "package" %}</h2>
+<div class="row justify-content-center">
+	<div class="card" style="width:100%">
+		<div class="card-header">	
+			<h3>{{ package.track_number }}</h3>		
+			<h4>{{ package.dates | date:"d.m.Y H:i"}}</h4>		
+		</div>
+		<div class="card-body">
+			<h4>{% trans "sender" %}</h4>			
+			<p>{{ package.sender_country }}</p>			
+			<p>{{ package.sender_address }}</p>			
+			<p>{{ package.sender_name }}</p>	
+			<h4>{% trans "recipient" %}</h4>			
+			<p>{{ package.recipient_country }}</p>			
+			<p>{{ package.recipient_address }}</p>			
+			<p>{{ package.recipient_name }}</p>			
+			<p>{{ package.recipient_phone }}</p>			
+		</div>
+		<div class="card-footer">	
+			{% if package.final != None %}
+				<h4>{{ package.final }}</h4>
+			{% endif %}			
+		</div>		
+	</div>
+	<br>
+	<div class="div-button-center">
+		<a class="btn btn-outline-info" style="width:120px" href="{% url 'package_index' %}">{% trans "Back" %}</a> 	
+	</div>
+</div>
+
+{% endblock content %}
