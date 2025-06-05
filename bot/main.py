@@ -41,32 +41,32 @@ welcome_message = "Бот предназначен для поиска почт�
 database_name="d98ui5eq2lp29a"
 #database_name="post"
 
-"""
+
 def get_connection_string():
-    cs = psycopg2.connect("postgres://dhayvxvdlspbzy:cd27da59cf5fef16b9ceeddf205a5c5301458c6380df72e157924d2a675414f1@ec2-44-194-92-192.compute-1.amazonaws.com:5432/d98ui5eq2lp29a", sslmode="require")
+    cs = psycopg2.connect("postgresql://post_admin:5tkueJSPRCeky4evXwDE9OhO4WhRa8Un@dpg-d10ig4jipnbc738s1tmg-a.frankfurt-postgres.render.com/post_gewy", sslmode="require")
     return cs
 
 def get_connection_string2():
-    cs = psycopg2.connect("postgres://dhayvxvdlspbzy:cd27da59cf5fef16b9ceeddf205a5c5301458c6380df72e157924d2a675414f1@ec2-44-194-92-192.compute-1.amazonaws.com:5432/d98ui5eq2lp29a", sslmode="require")
-    return cs
-"""
-
-def get_connection_string():
-    print("get_connection_string")
-    cs = psycopg2.connect(user="postgres",
-                            password="3552998",
-                            host="127.0.0.1",
-                            port="5433",
-                            database="post")
+    cs = psycopg2.connect("postgresql://post_admin:5tkueJSPRCeky4evXwDE9OhO4WhRa8Un@dpg-d10ig4jipnbc738s1tmg-a.frankfurt-postgres.render.com/post_gewy", sslmode="require")
     return cs
 
-def get_connection_string2():
-    print("get_connection_string2")
-    cs = psycopg2.connect(user="postgres",
-                            password="3552998",
-                            host="127.0.0.1",
-                            port="5433")
-    return cs
+
+# def get_connection_string():
+#     print("get_connection_string")
+#     cs = psycopg2.connect(user="postgres",
+#                             password="3552998",
+#                             host="127.0.0.1",
+#                             port="5433",
+#                             database="post")
+#     return cs
+
+# def get_connection_string2():
+#     print("get_connection_string2")
+#     cs = psycopg2.connect(user="postgres",
+#                             password="3552998",
+#                             host="127.0.0.1",
+#                             port="5433")
+#     return cs
 
 
 # Метод, который получает сообщения и обрабатывает их
